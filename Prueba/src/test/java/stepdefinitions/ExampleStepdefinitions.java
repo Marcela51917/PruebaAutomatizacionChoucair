@@ -21,11 +21,12 @@ public class ExampleStepdefinitions {
     private HomePage homePage= new HomePage();
 
 
+
     @Dado("^cualquier persona que desee ingresar a la pagina Utest\\.com$")
     public void cualquierPersonaQueDeseeIngresarALaPaginaUtestCom() {
         // Write code here that turns the phrase above into concrete actions
         actor.can(BrowseTheWeb.with(navegador));
-      //  actor.wasAbleTo(Open.browserOn(HomePage));
+        actor.wasAbleTo(Open.browserOn(homePage));
 
     }
 
@@ -60,7 +61,5 @@ public class ExampleStepdefinitions {
     }
 
 
-    public WebDriver getNavegador() {
-        return navegador;
-    }
+
 }

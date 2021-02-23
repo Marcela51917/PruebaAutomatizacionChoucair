@@ -3,7 +3,7 @@ package userinterfaces;
 
 import net.thucydides.core.annotations.DefaultUrl;
 
-import net.thucydides.core.pages.PageObject;
+import net.serenitybdd.core.pages.PageObject;
 
  @DefaultUrl("https:// utest.com")
 
